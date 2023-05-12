@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+    <title>Simple Form</title>
+</head>
+<body>
+    <div id="overlay">
+        <div id="overlay-box">
+            <h2>Your Results</h2>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#3b82f6" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                   
+            </div>
+            <div class="results">
+    
+            </div>
+        </div>
+       </div>
+       <div class="container">
+            <form class="form" id="myForm">
+                <h1>Example Form</h1>
+                <div class="form-group">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name"
+                    title="Between 3 and 28 characters"
+                    />
+                    <p class="first-name-hint">must be between 3 and 28 characters</p>
+                </div>
+    
+                <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name"
+                    title="Between 3 and 28 characters"
+                     />
+                     <p class="last-name-hint">must be between 3 and 28 characters</p>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" 
+                    title="Enter a valid email address"
+                    required
+                />
+                <p class="email-hint">must be a valid email address</p>
+                </div>
+    
+                <fieldset class="radio-field">
+                    <legend>Are you male or female</legend>
+                    <div class="radio-group">
+                        <input type="radio" name="sex" id="male" value="male"/>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="sex" id="female" value="female"  />
+                        <label for="female">Female</label>
+                    </div>
+                    <p class="radio-hint">Please select one</p>
+                </fieldset>
+    
+                <fieldset class="checkbox-field">
+                    <legend>What do you want to learn</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox"
+                        name="code" id="css" value="css" />
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox"
+                        name="code" id="html" value="html" />
+                        <label for="html">HTML</label>
+                    </div>
+    
+                    <div class="checkbox-group">
+                        <input type="checkbox"
+                        name="code" id="js" value="JavaScript" />
+                        <label for="js">JavaScript</label>
+                    </div>
+                    <p class="checkbox-hint">Please select at least one</p>
+                </fieldset>
+    
+                <div class="form-group select-container">
+                    <select name="status" size="1" id="status">
+                        <option value="choose" selected>Choose</option>
+                        <option value="school">School</option>
+                        <option value="college">College</option>
+                        <option value="working">Working</option>
+                        <option value="retired">Retired</option>
+                    </select>
+                    <p class="select-hint">Please select one</p>
+                </div>
+    
+                <button class="btn btn-blue" type="submit" disabled >Login</button>
+                
+            </form>
+       </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
